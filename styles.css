@@ -90,10 +90,10 @@ body {
   width: 680px;
 }
 .timeline ul li:nth-of-type(odd) div {
-  transform: translate3d(100px, -10px, 0) rotate(10deg);
+  transform: translate3d(120px, -5px, 0) rotate(5deg);
 }
 .timeline ul li:nth-of-type(even) div {
-  transform: translate3d(-100px, -10px, 0) rotate(10deg);
+  transform: translate3d(-120px, -5px, 0) rotate(5deg);
 }
 .timeline ul li.in-view div {
   transform: none;
@@ -101,17 +101,35 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1458px) {
   .timeline ul li div {
-    width: 250px;
+    width: 35vw;
+  }
+  .timeline ul li:nth-of-type(odd) > div {
+    left: 45px;
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: -430px;
+  }
+  .images {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: 90vw;
     flex-direction: column;
   }
   .timeline ul li div div {
-    width: 80%;
+    width: 90%;
     margin: 10px;
   }
   .timeline ul li:nth-of-type(even) > div {
-    left: -715px;
+    left: 20px;
   }
 }
 @media screen and (max-width: 600px) {
