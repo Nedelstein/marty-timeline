@@ -109,7 +109,7 @@ body {
     left: 45px;
   }
   .timeline ul li:nth-of-type(even) > div {
-    left: -430px;
+    left: -550px;
   }
   .images {
     width: 100%;
