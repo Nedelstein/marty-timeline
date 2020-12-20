@@ -1,3 +1,3 @@
 # marty-timeline
 
-interactive timeline for marty greenbaum website
+simple interactive timeline for marty greenbaum website

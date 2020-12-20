@@ -6,11 +6,18 @@
   box-sizing: border-box;
 }
 body {
-  font: normal 10.6666666667px "Titillium Web", sans-serif;
-  color: white;
+  font: normal 12px "Titillium Web", sans-serif;
+  color: black;
   overflow-x: hidden;
   padding-bottom: 50px;
 }
+
+.images {
+  padding-top: 10px;
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -22,11 +29,13 @@ body {
 .timeline ul li::after {
   content: "";
   position: absolute;
+
+  transform: translateX(-50%);
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%) rotate(45deg);
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
   z-index: 2;
   background: black;
 }
@@ -35,8 +44,8 @@ body {
   bottom: 0;
   width: 400px;
   padding: 20px;
-  background: black;
-  box-shadow: 4px 13px 30px 1px;
+  background: #f8f8ff;
+  box-shadow: 4px 13px 30px 1px #c5c5c5;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -54,15 +63,16 @@ body {
   letter-spacing: 2px;
 }
 .timeline ul li div div {
-  height: 35vh;
+  /* height: 35vh; */
   /* width: 30vw; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .timeline ul li div div p {
   text-align: center;
+  padding-top: 5px;
 }
 .timeline ul li div .discovery {
   margin-right: 10px;
@@ -71,13 +81,13 @@ body {
   left: 45px;
 }
 .timeline ul li:nth-of-type(even) > div {
-  left: -685px;
+  left: -715px;
 }
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease-in-out;
-  width: 35vw;
+  width: 680px;
 }
 .timeline ul li:nth-of-type(odd) div {
   transform: translate3d(100px, -10px, 0) rotate(10deg);
@@ -90,6 +100,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;
@@ -100,13 +111,10 @@ body {
     margin: 10px;
   }
   .timeline ul li:nth-of-type(even) > div {
-    left: -289px;
+    left: -715px;
   }
 }
 @media screen and (max-width: 600px) {
-  body {
-    background: #8bfff4;
-  }
   .timeline ul li {
     margin-left: 20px;
   }
