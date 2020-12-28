@@ -73,9 +73,13 @@
   /* justify-content: center; */
   align-items: center;
 }
+
+.timeline ul li div h1 {
+  margin: 0 0;
+}
+
 .timeline ul li div div p {
   text-align: center;
-  padding-top: 5px;
 }
 .timeline ul li div .discovery {
   margin-right: 10px;
