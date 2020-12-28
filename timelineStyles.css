@@ -82,7 +82,7 @@
   left: 45px;
 }
 .timeline ul li:nth-of-type(even) > div {
-  left: -715px;
+  left: -535px;
 }
 .timeline ul li div {
   visibility: hidden;
