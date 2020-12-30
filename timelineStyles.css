@@ -1,10 +1,11 @@
-*,
+/* *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
+
 .timeline {
   /* font: normal 12px "Titillium Web", sans-serif; */
   color: black;
@@ -32,7 +33,6 @@
 .timeline ul li::after {
   content: "";
   position: absolute;
-
   transform: translateX(-50%);
   left: 50%;
   bottom: 0;
@@ -43,6 +43,7 @@
   background: black;
 }
 .timeline ul li div {
+  box-sizing: border-box;
   position: relative;
   bottom: 0;
   width: 300px;
